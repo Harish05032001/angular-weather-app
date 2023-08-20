@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    /* margin: 50px; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    /* background: linear-gradient(to right, rgb(126, 205, 230), rgb(13, 34, 102)); */
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../../assets/weather_clouds.jpg);
+    background-size: cover;
+}
+
+.weatherForm{
+    display: flex;
+  flex-direction: column;
+  height:530px;
+  width:420px;
+  background: rgba(255,255,255,0.2);
+  box-shadow: 10px 10px 10px 0 rgba(10,10,10,0.3);
+  border-radius: 25px;
+}
+
+.weatherForm::before{
+    content: '';
+    position: absolute;
+    bottom: 1%;
+    right:30%;
+    width: 150px;
+    height: 150px;
+    background:rgb(106, 178, 245);
+    border-radius: 50%;
+    z-index: 0.1;
+    opacity:0.3;
+  }
+  .weatherForm::after{
+    content: '';
+    position: absolute;
+    top: 6%;
+    left:30%;
+    width: 100px;
+    height: 100px;
+    background:rgb(148, 199, 247);
+    border-radius: 50%;
+    z-index: 1;
+    opacity:0.3;
+  }
+
+  .header{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-shadow: 10px 10px 10px 0 rgba(10,10,10,0.3);
+    opacity: 0.7;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    color:black;
+  }
+
+  .input{
+      display: flex;
+      flex-direction: column;
+  }
+  .fields{
+      font-size: 20px;
+      color: black;
+  }
+  .fields label{
+      opacity: 0.7;
+      margin-left: 30px;
+      margin-bottom: 3%;
+  }
+
+  .fields input{
+    width: 80%;
+    margin:10px 30px;
+    border: none;
+    outline: none;
+    height:50%;
+    background: transparent;
+    border-bottom: 1px solid white;
+  }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    margin: 5px 10px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    border: none;
+    outline:none;
+  
+  }
+  .btn button{
+    padding: 15px 30px;
+    font-size: 15px;
+    background:linear-gradient(to left, rgb(64, 169, 148),rgb(123, 31, 125));
+    color:white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 0 rgb(24, 57, 60);
+  }
+
+  .temp-hum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.7; */
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    gap: 20px;
+
+  }
+  
